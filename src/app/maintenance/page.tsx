@@ -37,12 +37,8 @@ export default function MaintenancePage() {
         </h1>
 
         {/* Message */}
-        <p
-          className="text-lg mb-6"
-          style={{ color: "var(--text-secondary)" }}
-        >
-          Kami sedang melakukan pemeliharaan untuk meningkatkan layanan.
-          Silakan kembali lagi nanti.
+        <p className="text-lg mb-6" style={{ color: "var(--text-secondary)" }}>
+          Developernya lagi mau benerin dulu nyak. Ntar balik lagi dah..
         </p>
 
         {/* Estimated Time */}
@@ -56,7 +52,7 @@ export default function MaintenancePage() {
           <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
             Estimasi selesai dalam{" "}
             <span className="font-semibold" style={{ color: "var(--accent)" }}>
-              3-5 hari
+              yaa suka-suka gua la
             </span>
           </p>
         </div>
