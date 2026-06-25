@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/context/ThemeContext";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://naufalbhanu.dev"),
+  metadataBase: new URL("https://bhanportfolio.dev"),
   title: {
     default: "Bhan's Portfolio",
     template: "%s | Bhan's Portfolio",
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "Full-Stack Developer specializing in React, Next.js, and modern web technologies. Building digital experiences that matter.",
   keywords: [
     "Naufal Bhanu",
+    "Naufal Bhanu Shidqianto",
     "Full-Stack Developer",
     "React Developer",
     "Next.js Developer",
@@ -23,14 +24,17 @@ export const metadata: Metadata = {
     "TypeScript",
     "Portfolio",
   ],
-  authors: [{ name: "Naufal Bhanu", url: "https://naufalbhanu.dev" }],
+  authors: [{ name: "Naufal Bhanu", url: "https://bhanportfolio.dev" }],
   creator: "Naufal Bhanu",
+  alternates: {
+    canonical: "https://bhanportfolio.dev",
+  },
   openGraph: {
     type: "website",
-    locale: "id_ID",
-    url: "https://naufalbhanu.dev",
-    siteName: "Naufal Bhanu Portfolio",
-    title: "Naufal Bhanu | Full-Stack Developer",
+    locale: "en_US",
+    url: "https://bhanportfolio.dev",
+    siteName: "Bhan's Portfolio",
+    title: "Bhan's Portfolio",
     description:
       "Full-Stack Developer specializing in React, Next.js, and modern web technologies.",
     images: [
@@ -39,12 +43,13 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Naufal Bhanu - Full-Stack Developer",
+        type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naufal Bhanu | Full-Stack Developer",
+    title: "Bhan's Portfolio",
     description:
       "Full-Stack Developer specializing in React, Next.js, and modern web technologies.",
     images: ["/og-image.png"],
@@ -59,6 +64,9 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  other: {
+    "theme-color": "#2563EB",
   },
 };
 
@@ -79,7 +87,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Naufal Bhanu",
-  url: "https://naufalbhanu.dev",
+  url: "https://bhanportfolio.dev",
   jobTitle: "Full-Stack Developer",
   description:
     "Full-Stack Developer specializing in React, Next.js, and modern web technologies.",
@@ -105,7 +113,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="id"
+      lang="en"
       className={`${inter.variable} ${outfit.variable} ${sora.variable} h-full antialiased`}
       suppressHydrationWarning
     >

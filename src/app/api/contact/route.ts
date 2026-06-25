@@ -56,7 +56,6 @@ export async function POST(request: NextRequest) {
 
     // TODO: Replace with actual email service (EmailJS, SendGrid, Resend, etc.)
     // For now, we simulate a successful submission
-    console.log("Contact form submission:", { name, email, message });
 
     // Simulate processing delay
     await new Promise((resolve) => setTimeout(resolve, 500));
@@ -65,8 +64,7 @@ export async function POST(request: NextRequest) {
       success: true,
       message: "Message sent successfully! Thank you for reaching out.",
     });
-  } catch (error) {
-    console.error("Contact form error:", error);
+  } catch {
     return NextResponse.json(
       { success: false, error: "Something went wrong. Please try again." },
       { status: 500 }
